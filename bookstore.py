@@ -23,6 +23,10 @@ class Book:
     def nowa_oprawa(self,nowa):
         self.oprawa = nowa
 
+
+    def set_cena(self,nowacena):
+        self.cena = nowacena
+
 b1 = Book(23,"Wiedźmin","Andrzej Sapkowski",42)
 #b1.oprawa = "twarda"
 b1.nowa_oprawa("twarda")
@@ -33,5 +37,11 @@ print("_"*50)
 b2 = Book(44,"Hobbit","J.R.R Tolkien", 36)
 b2.print_book()
 print(f"rabat: {b2.rabat(12)} zł")
+
+print("zmiana ceny")
+b2.set_cena(45)
+b2.print_book()
+print(f"rabat: {b2.rabat(12):.2f} zł")
+
 
 
