@@ -19,3 +19,19 @@ class Book:
 
     def rabat(self,procent):
         return procent/100 * self.cena
+
+    def nowa_oprawa(self,nowa):
+        self.oprawa = nowa
+
+b1 = Book(23,"Wiedźmin","Andrzej Sapkowski",42)
+#b1.oprawa = "twarda"
+b1.nowa_oprawa("twarda")
+b1.print_book()
+print(f"rabat: {b1.rabat(15)} zł")
+
+print("_"*50)
+b2 = Book(44,"Hobbit","J.R.R Tolkien", 36)
+b2.print_book()
+print(f"rabat: {b2.rabat(12)} zł")
+
+
