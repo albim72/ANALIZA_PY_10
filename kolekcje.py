@@ -119,3 +119,6 @@ print(strg)
 klubsp = "Klub Sportowy: \"RKS Wieluń\""
 print(klubsp)
 
+print(osoba.keys())
+print(osoba.values())
+print(osoba.items())
