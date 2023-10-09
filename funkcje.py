@@ -46,3 +46,40 @@ print(multi(6)(5))
 
 #przykład 4
 num = [67,2,5,-17,0,122,34,56,118,-100,0,98,-4,13]
+
+parzyste_n = list(filter(lambda x:x%2==0,num))
+print(parzyste_n)
+
+cube = list(map(lambda x:x**3,num))
+print(cube)
+
+
+import time
+blista = [m**4 for m in range(10_000_000)] #list comprehension
+
+start = time.perf_counter() #czas [s] który upłynął  od 1.1.1970
+print(start)
+print(sum(blista))
+
+end = time.perf_counter()
+print(end)
+
+print(f'wykonanie listy trwało: {end - start} s')
+
+#przykład 5
+
+def pokaz_statystyki(lista):
+    minimum = min(lista)
+    maksimum = max(lista)
+    rozstep = maksimum-minimum
+    liczbael = len(lista)
+    return [minimum,maksimum,rozstep,liczbael]
+
+
+wynik = pokaz_statystyki(num)
+print(wynik)
+print(type(wynik))
+
+mini,maxi,roz,le = pokaz_statystyki(num)
+
+print(f"wartość max = {maxi}, wartość min = {mini}, rozstęp = {roz}, liczba elementów: {le}")
