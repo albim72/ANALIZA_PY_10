@@ -94,7 +94,28 @@ kolory.add("fioletowy")
 print(kolory)
 kolory.remove("zielony")
 print(kolory)
-kolory.remove("purpurowy")
+kolory.discard("purpurowy")
 print(kolory)
 
+#słownik - -dictionary
+
+osoba = {
+    "imię":"Anna",
+    "nazwisko":"Kot",
+    "wiek":25,
+    "miasto":"Kraków"
+}
+
+print(osoba)
+print(osoba["miasto"])
+osoba["miasto"] ='Toruń'
+print(osoba)
+osoba["koloroczu"] = "brązowe"
+print(osoba)
+
+strg = 'Nazwa klubu: "KLUB NOCNE ĆMY"'
+print(strg)
+
+klubsp = "Klub Sportowy: \"RKS Wieluń\""
+print(klubsp)
 
