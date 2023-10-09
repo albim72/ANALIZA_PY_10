@@ -73,3 +73,28 @@ print(imiona)
 print(imiona2)
 print(imiona3)
 print(imiona4)
+
+#tuple - krotka (lista niemutoowalna)
+
+miasta = ("Kraków","Warszawa","Lublin","Toruń","Gdańsk","Kraków","Lublin")
+print(type(miasta))
+
+print(miasta[2:4])
+
+
+#zbiór
+kolory = {"biały","czarny","czerwony","zielony","biały","cyan","żółty","biały"}
+
+print(type(kolory))
+print(kolory)
+print(kolory)
+print(kolory)
+
+kolory.add("fioletowy")
+print(kolory)
+kolory.remove("zielony")
+print(kolory)
+kolory.remove("purpurowy")
+print(kolory)
+
+
