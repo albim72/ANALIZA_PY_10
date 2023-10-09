@@ -43,3 +43,6 @@ def multi(n):
     return lambda a:a*n
 
 print(multi(6)(5))
+
+#przykład 4
+num = [67,2,5,-17,0,122,34,56,118,-100,0,98,-4,13]
